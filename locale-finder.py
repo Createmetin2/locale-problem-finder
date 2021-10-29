@@ -20,13 +20,13 @@ for line in lines:
 		continue
 	firstPos = line.find('"')
 	if firstPos == -1:
-		print "Problem from "+line+" line: "+str(lineIndex)
+		print "Problem from line: "+str(lineIndex)+" - "+line
 		os.system("PAUSE")
 		sys.exit()
 	else:
 		secondPos = line[firstPos+1:].find('";')
 		if secondPos == -1:
-			print "Problem from "+line+" line: "+str(lineIndex)
+			print "Problem from line: "+str(lineIndex)+" - "+line
 			os.system("PAUSE")
 			sys.exit()
 	cur+=1
